@@ -1,4 +1,4 @@
-Code to Run Analysis
+#Code to Run Analysis.
 #Download the file and put the file in the data folder
 if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
