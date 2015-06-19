@@ -1,0 +1,38 @@
+Description
+
+This codebook describes variables, data, and any transformations or performed to clean up the data.
+
+Source Data
+
+A full description of the data used in this project can be found at The UCI Machine Learning Repository
+
+The source data for this project can be found here.
+
+1. Merge the training and the test sets to create one data set.
+
+The following files have been read into seperate tables each:
+
+features.txt
+activity_labels.txt
+subject_train.txt
+x_train.txt
+y_train.txt
+subject_test.txt
+x_test.txt
+y_test.txt
+All of the test and train datasets are merged into a single table using the rbind function in R.
+
+2. Extract only the measurements on the mean and standard deviation for each measurement.
+
+Using grep we extracted all mean and std data for the merged dataset.
+
+3. Use descriptive activity names to name the activities in the data set
+
+Merge data subset with the activityType table to inlude the descriptive activity names.
+
+4. Appropriately labels the data set with descriptive variable names
+
+The gsub function was used to clean up the variable names.
+
+5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+
